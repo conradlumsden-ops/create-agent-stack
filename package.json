@@ -1,0 +1,24 @@
+{
+  "name": "create-agent-stack",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Production-ready Hermes + OpenClaw agent scaffold with auth, monitoring, and one-command deploy.",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "skills:list": "tsx src/list-skills.ts"
+  },
+  "dependencies": {
+    "@sentry/node": "^8.0.0",
+    "dotenv": "^16.4.0",
+    "hono": "^4.6.0",
+    "openai": "^4.60.0",
+    "@hono/node-server": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  }
+}
